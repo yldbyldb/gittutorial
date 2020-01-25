@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scal=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Quando&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+	<title>Portfolio - 1</title>
+	
+</head>
+
+<body>
+	<header>
+		<div class="top">
+			<a href="home.html"><picture id="logo"> <source media="(min-width:960px)" srcset="images/llogo.png"> <img src="images/slogo.png" alt="Logo"></picture></a>
+			<h1>WEB DEVELOPER</h1>
+			<nav>
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="about.html">About me</a></li>
+					<li><a href="portfolio1.html">Portfolio</a></li>
+					<li><a href="https://infoweb.hornsby.tafensw.edu.au/~indigo02/wordpress/?p=115">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+		
+<!-- 		<picture id="background"> <source media="(min-width:960px" srcset="images/back.png">
+ -->		
+
+			
+	<div  class="wrapper">
+		<div class="portfolio">
+			<div class="left">
+				<div class="brief">
+					<h2>Project Brief</h2>
+					<p>Create a home page for 17 Tools by using Photoshop.</p>
+				</div>
+
+				<div class="key">
+					<h2>Key Skills</h2>
+					<div id="keypic">
+						<img src="images/ps-i.png" alt="ps">
+					</div>
+					<ul>
+						<li>Colour chart</li>
+						<li>Wireframe</li>
+						<li>Site map</li>
+						<li>Cropping, resizing and image manipulation</li>
+						<li>Responsive design</li>
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="right">
+				<img src="images/portfolio/1-17Tools.jpg" alt="17Tools">
+			</div>
+		</div>
+
+		<div class="learn-more">
+			<a href="portfolio6.html">Pre</a>
+			<a href="portfolio2.html">Next</a>
+		</div>
+	</div>
+
+	<div id="slideshow">
+		<div class="slick">
+			<div>
+				<a href="portfolio1.html"><img src="images/17Tools_thumb.png" alt="17Tools_thumb"></a>
+			</div>
+			<div>
+				<a href="portfolio2.html"><img src="images/pinterest_thumb.png" alt="pinterest_thumb"></a>
+			</div>
+			<div>
+				<a href="portfolio3.html"><img src="images/starburger_thumb.png" alt="starburger_thumb"></a>
+			</div>
+			<div>
+				<a href="portfolio4.html"><img src="images/sunyspot_thumb.png" alt="sunyspot_thumb"></a>
+			</div>
+			<div>
+				<a href="portfolio5.html"><img src="images/webTech_thumb.png" alt="webTech_thumb"></a>
+			</div>
+			<div>
+				<a href="portfolio6.html"><img src="images/wordpress_thumb.png" alt="wordpress_thumb"></a>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div  class="wrapper">
+			<p id="icon">
+				<i class="fab fa-twitter-square"></i>
+				<i class="fab fa-pinterest-square"></i>
+				<i class="fab fa-facebook-square"></i>
+				<i class="fab fa-youtube-square"></i>
+			</p>
+
+			<h1>BIN DONG</h1>
+			<p id="copyright">COPYRIGHT 2019, BIN DONG. ALL RIGHTS RESERVED</p>
+		</div>
+	</footer>
+
+<!-- 1. Include the jQuery library -->
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+
+	<!-- 2. Include the plugin's JS/jQuery code -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<!-- 3. Custom JS/jQuery code for this page - initialise the plugin -->
+	<script type="text/javascript">
+		
+		"use strict";
+
+		// Wait until the document is "ready" (has loaded)
+		$(document).ready(function(){
+
+			// Initialise/activate the Slick plugin on the slideshow HTML
+			$('.slick').slick({
+				// setting-name: setting-value
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				infinite: true,			// infinite scrolling through items
+				dots: true,				// show pagination dots
+				// fade: true,				// turn off sliding
+				speed: 400,				// transition (fade) speed (0.4s)
+				autoplaySpeed: 2000,	// length of display of each slide (2s)
+				autoplay: true,			// automatically play
+				
+			});
+		});
+
+	</script>
+</body>
+</html>
